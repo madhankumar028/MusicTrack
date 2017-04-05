@@ -1,0 +1,27 @@
+{
+  "name": "musictrack",
+  "version": "1.0.0",
+  "description": "music track application",
+  "main": "index.js",
+  "scripts": {
+    "dev": "lite-server"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/madhankumar028/MusicTrack.git"
+  },
+  "keywords": [],
+  "author": "MadhankumarJ <madhankumar028@gmail.com>",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/madhankumar028/MusicTrack/issues"
+  },
+  "homepage": "https://github.com/madhankumar028/MusicTrack#readme",
+  "dependencies": {
+    "angular": "^1.6.4",
+    "angular-resource": "^1.6.4"
+  },
+  "devDependencies": {
+    "lite-server": "^2.3.0"
+  }
+}

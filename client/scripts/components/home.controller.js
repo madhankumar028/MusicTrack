@@ -10,6 +10,6 @@
 
     function HomeCtrl() {
 
-        this.title = 'Music Track Application!';
+        this.title = 'Music Track!';        
     }
-}())
+}());

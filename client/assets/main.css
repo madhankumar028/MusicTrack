@@ -1,0 +1,22 @@
+* {
+    margin: 0px;
+    padding: 0px;
+}
+.title {
+    padding-left: 20px;
+}
+.search--border {
+    padding-left: 35px;    
+    outline: none;
+    border-radius: 30px 30px 30px 30px;
+}
+.search-icon {
+    position: relative;
+    left: 25px;
+}
+li {
+    list-style: none;
+}
+.music-list {
+    margin-top: 50px;
+}

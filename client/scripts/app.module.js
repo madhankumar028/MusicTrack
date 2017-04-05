@@ -32,4 +32,4 @@
         // Default Route
         $urlRouterProvider.otherwise('/home');        
     }
-}())
+}());

@@ -6,10 +6,19 @@
     .module('app.home', [])
     .controller('HomeController', HomeCtrl);
 
-    HomeCtrl.$inject = [];
+    HomeCtrl.$inject = ['HomeService'];
 
-    function HomeCtrl() {
+    function HomeCtrl(HomeService) {
 
-        this.title = 'Music Track!';        
+        this.title = 'Music Track!';
+        this.getAllTracks = getAllTracks();
+
+        function getAllTracks() {
+            var tracks;
+            tracks = HomeService.getAllTracks();
+            tracks.then(function() {
+
+            });
+        }
     }
 }());

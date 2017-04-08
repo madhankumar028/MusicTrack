@@ -10,15 +10,17 @@
 
     function HomeCtrl(HomeService) {
 
-        this.title = 'Music Track!';
-        this.getAllTracks = getAllTracks();
+        var self = this;
+        self.title = 'Music Track!';
+        self.getAllTracks = getAllTracks;
 
         function getAllTracks() {
-            var tracks;
-            tracks = HomeService.getAllTracks();
-            tracks.then(function() {
-
+            var tracks = HomeService.getAllTracks();
+            tracks.then(function(response){
+                console.log(response.data);
             });
         }
+
+        self.getAllTracks();
     }
 }());

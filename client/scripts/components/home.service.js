@@ -8,29 +8,30 @@
 
     function HomeService($http, $q) {
 
-        this.getAllTracks = getAllTracks();
+        var self = this;
+
+        self.getAllTracks = getAllTracks;
         
-        var baseUrl = 'http://104.197.128.152:8000/v1/tracks';
+        var baseUrl = `http://104.197.128.152:8000/v1/tracks`;
 
         function getAllTracks() {
 
             var options = {
-                url: '',
+                url: `http://104.197.128.152:8000/v1/tracks`,
                 method: 'GET',
                 cache: true,
                 headers: { 'content-type': 'application/json'}
             },
             deferred = $q.defer();
 
-            function handleSuccess(data, status, headers, config) {
-                deferred.resolve(data, status, headers, config);
-            }
+            $http(options)
+            .then(function successCallback(response) {
+                deferred.resolve(response);
+            }, function errorCallback(response) {
+                deferred.reject(response);
+            });
 
-            function handleFailure(data, status, headers, config) {
-                deferred.reject(data, status, headers, config);
-            }
-
-            $http(options).success(handleSuccess).error(handleFailure);
+            return deferred.promise;
         }
     }
 

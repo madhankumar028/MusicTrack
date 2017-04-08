@@ -14,24 +14,19 @@
         <div class="col-sm-5 col-sm-offset-5 col-md-4 panel-shadow">
             <div>
                 <table>
-                    <tr>
+                    <tr ng-repeat="track in HomeCtrl.tracks">
                         <td>
-                            Test
+                            {{track.title}}
                         </td>
                         <td>
-                            <span class="glyphicon glyphicon-star"></span>
+                            {{track.rating}}
+                            <!--<span class="glyphicon glyphicon-star"></span>
                             <span class="glyphicon glyphicon-star"></span>                            
                             <span class="glyphicon glyphicon-star"></span>                            
                             <span class="glyphicon glyphicon-star"></span>                            
-                            <span class="glyphicon glyphicon-star-empty"></span>
+                            <span class="glyphicon glyphicon-star-empty"></span>-->
                         </td>
-                    </tr>
-                    <tr>
-                        <td>Hollywood</td>
-                    </tr>
-                        <td>Bollywood</td>
-                        <td>Kollywood</td>
-                    </tr>
+                    </tr>                    
                 </table>
             </div>           
         </div>

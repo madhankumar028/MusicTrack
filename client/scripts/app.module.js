@@ -1,6 +1,6 @@
 /**
  * Music Track Application
- * Author MadhankumarJ <madhankumar028@gmail.com>
+ * Author MadhankumarJ<madhankumar028@gmail.com>
  * 
  */
 
